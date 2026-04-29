@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">K23411T_App</string>
+    <string name="str_youruni">Trường Đại học Kinh tế – Luật</string>
+    <string name="str_show_major">Nhấn để xem chuyên ngành của bạn</string>
+    <string name="str_major">Khoa học dữ liệu</string>
+</resources>

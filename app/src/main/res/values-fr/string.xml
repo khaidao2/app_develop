@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">K23411T_App</string>
+    <string name="str_youruni">Université d\'Économie et de Droit</string>
+    <string name="str_show_major">Appuyez pour voir votre spécialité</string>
+    <string name="str_major">Science des données</string>
+</resources>

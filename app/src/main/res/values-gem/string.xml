@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">K23411T_App</string>
+    <string name="str_youruni">Universität für Wirtschaft und Recht</string>
+    <string name="str_show_major">Klicken Sie, um Ihr Studienfach anzuzeigen</string>
+    <string name="str_major">Datenwissenschaft</string>
+</resources>
