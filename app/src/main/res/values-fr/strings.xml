@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">K23411T_App</string>
+    <string name="str_youruni">Université d\'Économie et de Droit</string>
+    <string name="str_show_major">Cliquez pour voir votre spécialité</string>
+    <string name="str_major">Science des données</string>
+    <string name="str_login_system">SYSTÈME DE CONNEXION</string>
+    <string name="str_username">chaîne</string>
+
+    <string name="str_hint_username">Entrez votre nom d\'utilisateur</string>
+    <string name="str_username1">nom d\'utilisateur</string>
+    <string name="str_username2">Nom d\'utilisateur :</string>
+
+    <string name="str_pwd">Mot de passe :</string>
+    <string name="str_pwd_hint">Entrez votre mot de passe</string>
+    <string name="str_login">Se connecter</string>
+    <string name="str_exit">Quitter</string>
+
+    <string name="login_success">CONNEXION RÉUSSIE !!!</string>
+    <string name="login_failed">ÉCHEC DE LA CONNEXION !!!</string>
+</resources>

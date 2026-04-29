@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">K23411T_App</string>
+    <string name="str_youruni">Trường Đại học Kinh tế - Luật</string>
+    <string name="str_show_major">Nhấn để xem ngành học</string>
+    <string name="str_major">Khoa học dữ liệu</string>
+    <string name="str_login_system">HỆ THỐNG ĐĂNG NHẬP</string>
+    <string name="str_username">chuỗi</string>
+    <string name="str_hint_username">Nhập tên đăng nhập</string>
+    <string name="str_username1">tên đăng nhập</string>
+    <string name="str_username2">Tên đăng nhập:</string>
+    <string name="str_pwd">Mật khẩu:</string>
+    <string name="str_pwd_hint">Nhập mật khẩu</string>
+    <string name="str_login">Đăng nhập</string>
+    <string name="str_exit">Thoát</string>
+    <string name="login_success">ĐĂNG NHẬP THÀNH CÔNG!!!</string>
+    <string name="login_failed">ĐĂNG NHẬP THẤT BẠI!!!</string>
+</resources>

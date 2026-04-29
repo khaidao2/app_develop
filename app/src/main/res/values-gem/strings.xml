@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">K23411T_App</string>
+    <string name="str_youruni">Universität für Wirtschaft und Recht</string>
+    <string name="str_show_major">Klicken, um Ihr Studienfach zu sehen</string>
+    <string name="str_major">Datenwissenschaft</string>
+    <string name="str_login_system">ANMELDESYSTEM</string>
+    <string name="str_username">Zeichenfolge</string>
+    <string name="str_hint_username">Benutzernamen eingeben</string>
+    <string name="str_username1">Benutzername</string>
+    <string name="str_username2">Benutzername:</string>
+    <string name="str_pwd">Passwort:</string>
+    <string name="str_pwd_hint">Passwort eingeben</string>
+    <string name="str_login">Anmelden</string>
+    <string name="str_exit">Beenden</string>
+    <string name="login_success">ANMELDUNG ERFOLGREICH!!!</string>
+    <string name="login_failed">ANMELDUNG FEHLGESCHLAGEN!!!</string>
+</resources>
