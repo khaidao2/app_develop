@@ -14,4 +14,10 @@
     <string name="str_exit">Thoát</string>
     <string name="login_success">ĐĂNG NHẬP THÀNH CÔNG!!!</string>
     <string name="login_failed">ĐĂNG NHẬP THẤT BẠI!!!</string>
+    <string name="str_mr">LOGIN FAILED!!!</string>
+    <string name="str_mc">LOGIN FAILED!!!</string>
+    <string name="str_mplus">LOGIN FAILED!!!</string>
+    <string name="str_ms">LOGIN FAILED!!!</string>
+    <string name="str_minus">LOGIN FAILED!!!</string>
+    <string name="str_opencal">Open Calculator</string>
 </resources>

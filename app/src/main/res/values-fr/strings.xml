@@ -17,4 +17,10 @@
 
     <string name="login_success">CONNEXION RÉUSSIE !!!</string>
     <string name="login_failed">ÉCHEC DE LA CONNEXION !!!</string>
+    <string name="str_mr">LOGIN FAILED!!!</string>
+    <string name="str_mc">LOGIN FAILED!!!</string>
+    <string name="str_mplus">LOGIN FAILED!!!</string>
+    <string name="str_ms">LOGIN FAILED!!!</string>
+    <string name="str_minus">LOGIN FAILED!!!</string>
+    <string name="str_opencal">Open Calculator</string>
 </resources>

@@ -14,4 +14,10 @@
     <string name="str_exit">Beenden</string>
     <string name="login_success">ANMELDUNG ERFOLGREICH!!!</string>
     <string name="login_failed">ANMELDUNG FEHLGESCHLAGEN!!!</string>
+    <string name="str_mr">LOGIN FAILED!!!</string>
+    <string name="str_mc">LOGIN FAILED!!!</string>
+    <string name="str_mplus">LOGIN FAILED!!!</string>
+    <string name="str_ms">LOGIN FAILED!!!</string>
+    <string name="str_minus">LOGIN FAILED!!!</string>
+    <string name="str_opencal">Open Calculator</string>
 </resources>
