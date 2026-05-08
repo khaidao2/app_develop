@@ -1,6 +1,8 @@
 package com.example.k23411t_app;
 import net.objecthunter.exp4j.Expression;
 import net.objecthunter.exp4j.ExpressionBuilder;
+
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,6 +21,7 @@ public class CalculatorActivity extends AppCompatActivity {
     TextView txt_mr, txt_mc, txt_ms, txt_mplus, txt_mminus,txt_extra;
     View.OnClickListener n_click_listener;
     Button btn_del, btn_equal;
+    String ongoing_formula="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -111,5 +114,29 @@ public class CalculatorActivity extends AppCompatActivity {
         txt_mplus = findViewById(R.id.txt_mplus);
         txt_mminus = findViewById(R.id.txt_mminus);
         txt_extra=findViewById(R.id.txt_extra);
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        SharedPreferences preferences =
+                getSharedPreferences("CalculatorPrefs", MODE_PRIVATE);
+
+        String savedFormula = preferences.getString("formula", "");
+
+        edt_input.setText(savedFormula);
+    }
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        SharedPreferences preferences =
+                getSharedPreferences("CalculatorPrefs", MODE_PRIVATE);
+
+        SharedPreferences.Editor editor = preferences.edit();
+
+        editor.putString("formula", edt_input.getText().toString());
+
+        editor.apply();
     }
 }

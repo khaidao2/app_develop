@@ -20,5 +20,13 @@
     <string name="str_ms">LOGIN FAILED!!!</string>
     <string name="str_minus">LOGIN FAILED!!!</string>
     <string name="str_opencal">Open Calculator</string>
-
+    <string name="str_save_login_info">Save Login Information</string>
+    <string name="str_role">Login role\n</string>
+    <string name="str_admin">Admin</string>
+    <string name="str_user">User</string>
+    <string name="str_login_info">LoginInfor</string>
+    <string name="str_exit_title">Exit?</string>
+    <string name="str_exit_message">Really exit application?</string>
+    <string name="str_yes">YES</string>
+    <string name="str_no">NO</string>
 </resources>
