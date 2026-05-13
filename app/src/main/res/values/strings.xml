@@ -29,4 +29,10 @@
     <string name="str_exit_message">Really exit application?</string>
     <string name="str_yes">YES</string>
     <string name="str_no">NO</string>
+    <string name="str_id">id</string>
+    <string name="str_name">Name\n</string>
+    <string name="str_phone">Phone\n</string>
+    <string name="str_save">Save</string>
+    <string name="str_clear">Clear</string>
+    />
 </resources>
