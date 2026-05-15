@@ -124,7 +124,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 intent = new Intent(
                         LoginActivity.this,
-                        EmployeeManagementActivity.class);
+                        EmployeeAdvancedManagementActivity.class);
 
             } else {
 

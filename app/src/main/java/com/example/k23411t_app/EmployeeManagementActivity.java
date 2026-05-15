@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,11 +21,15 @@ import androidx.core.view.WindowInsetsCompat;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class EmployeeManagementActivity extends AppCompatActivity {
+public class EmployeeManagementActivity
+        extends AppCompatActivity {
 
     EditText edt_id, edt_name, edt_phone;
 
-    Button btn_save, btn_clear, btn_exit;
+    Button btn_save,
+            btn_clear,
+            btn_delete,
+            btn_exit;
 
     ListView lv_data;
 
@@ -50,6 +55,8 @@ public class EmployeeManagementActivity extends AppCompatActivity {
 
         btn_clear = findViewById(R.id.btn_clear);
 
+        btn_delete = findViewById(R.id.btn_delete);
+
         btn_exit = findViewById(R.id.btn_exit);
 
         lv_data = findViewById(R.id.lv_data);
@@ -64,15 +71,16 @@ public class EmployeeManagementActivity extends AppCompatActivity {
 
         lv_data.setAdapter(adapter);
 
-        // Cho phép chọn 1 item để highlight
-        lv_data.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
+        lv_data.setChoiceMode(
+                ListView.CHOICE_MODE_SINGLE
+        );
     }
 
     private void sampleData() {
 
         Random random = new Random();
 
-        for (int i = 1; i <= 1000; i++) {
+        for (int i = 1; i <= 10; i++) {
 
             String id = "E" + i;
 
@@ -148,6 +156,12 @@ public class EmployeeManagementActivity extends AppCompatActivity {
                         edt_phone.setText("");
 
                         edt_id.requestFocus();
+
+                        lv_data.clearChoices();
+
+                        adapter.notifyDataSetChanged();
+
+                        selectedPosition = -1;
                     }
                 });
 
@@ -157,29 +171,7 @@ public class EmployeeManagementActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
 
-                        String id =
-                                edt_id.getText()
-                                        .toString()
-                                        .trim();
-
-                        String name =
-                                edt_name.getText()
-                                        .toString()
-                                        .trim();
-
-                        String phone =
-                                edt_phone.getText()
-                                        .toString()
-                                        .trim();
-
-                        String employee =
-                                id + ";" +
-                                        name + ";" +
-                                        phone;
-
-                        employeeList.add(employee);
-
-                        adapter.notifyDataSetChanged();
+                        saveEmployee();
                     }
                 });
 
@@ -192,6 +184,83 @@ public class EmployeeManagementActivity extends AppCompatActivity {
                         closeActivity(v);
                     }
                 });
+    }
+
+    private void saveEmployee() {
+
+        String id =
+                edt_id.getText()
+                        .toString()
+                        .trim();
+
+        String name =
+                edt_name.getText()
+                        .toString()
+                        .trim();
+
+        String phone =
+                edt_phone.getText()
+                        .toString()
+                        .trim();
+
+        if (id.isEmpty() ||
+                name.isEmpty() ||
+                phone.isEmpty()) {
+
+            return;
+        }
+
+        String employee =
+                id + ";" +
+                        name + ";" +
+                        phone;
+
+        int existingIndex = -1;
+
+        for (int i = 0; i < employeeList.size(); i++) {
+
+            String existing = employeeList.get(i);
+
+            String[] arr = existing.split(";");
+
+            if (arr[0].equals(id)) {
+
+                existingIndex = i;
+
+                break;
+            }
+        }
+
+        if (existingIndex != -1) {
+
+            employeeList.set(
+                    existingIndex,
+                    employee
+            );
+        }
+        else {
+
+            employeeList.add(employee);
+        }
+
+        adapter.notifyDataSetChanged();
+
+        clearInput();
+    }
+
+    private void clearInput() {
+
+        edt_id.setText("");
+
+        edt_name.setText("");
+
+        edt_phone.setText("");
+
+        edt_id.requestFocus();
+
+        selectedPosition = -1;
+
+        lv_data.clearChoices();
     }
 
     private void saveSelectedEmployee() {
@@ -249,26 +318,26 @@ public class EmployeeManagementActivity extends AppCompatActivity {
 
             edt_phone.setText(phone);
 
-            // Highlight item đã chọn
             lv_data.setItemChecked(
                     selectedPosition,
                     true);
 
-            // Scroll tới item
             lv_data.smoothScrollToPosition(
                     selectedPosition);
         }
     }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(
+            Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
 
         EdgeToEdge.enable(this);
 
         setContentView(
-                R.layout.activity_employee_management);
+                R.layout.activity_employee_management
+        );
 
         ViewCompat.setOnApplyWindowInsetsListener(
                 findViewById(R.id.main),
@@ -276,7 +345,9 @@ public class EmployeeManagementActivity extends AppCompatActivity {
 
                     Insets systemBars =
                             insets.getInsets(
-                                    WindowInsetsCompat.Type.systemBars());
+                                    WindowInsetsCompat
+                                            .Type
+                                            .systemBars());
 
                     v.setPadding(
                             systemBars.left,
@@ -308,9 +379,11 @@ public class EmployeeManagementActivity extends AppCompatActivity {
 
         Dialog dialog = new Dialog(this);
 
-        dialog.setContentView(R.layout.custom_dialog);
+        dialog.setContentView(
+                R.layout.custom_dialog);
 
-        dialog.setCanceledOnTouchOutside(false);
+        dialog.setCanceledOnTouchOutside(
+                false);
 
         ImageView img_yes =
                 dialog.findViewById(R.id.ic_yes);
@@ -339,5 +412,74 @@ public class EmployeeManagementActivity extends AppCompatActivity {
                 });
 
         dialog.show();
+    }
+
+    public void deleteEmployee(View v) {
+
+        if (selectedPosition == -1) {
+
+            String id = edt_id.getText()
+                    .toString()
+                    .trim();
+
+            if (id.isEmpty()) {
+
+                Toast.makeText(
+                        this,
+                        R.string.str_select_employee_to_delete,
+                        Toast.LENGTH_SHORT
+                ).show();
+
+                return;
+            }
+        }
+
+        android.app.AlertDialog.Builder builder =
+                new android.app.AlertDialog.Builder(
+                        this
+                );
+
+        builder.setTitle(
+                R.string.str_delete_confirm_title
+        );
+
+        builder.setMessage(
+                R.string.str_delete_confirm_message
+        );
+
+        builder.setPositiveButton(
+                R.string.str_yes,
+                (dialog, which) -> {
+
+                    if (selectedPosition != -1) {
+
+                        employeeList.remove(
+                                selectedPosition
+                        );
+                    }
+
+                    adapter.notifyDataSetChanged();
+
+                    edt_id.setText("");
+
+                    edt_name.setText("");
+
+                    edt_phone.setText("");
+
+                    selectedPosition = -1;
+
+                    lv_data.clearChoices();
+                }
+        );
+
+        builder.setNegativeButton(
+                R.string.str_no,
+                (dialog, which) -> {
+
+                    dialog.dismiss();
+                }
+        );
+
+        builder.show();
     }
 }

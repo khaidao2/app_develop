@@ -67,6 +67,14 @@
             android:text="@string/str_clear" />
 
         <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="deleteEmployee"
+            android:text="@string/str_delete" />
+
+        <Button
             android:id="@+id/btn_exit"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
