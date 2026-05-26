@@ -38,4 +38,72 @@
     <string name="str_delete_confirm_title">Confirm Delete</string>
     <string name="str_delete_confirm_message">Are you sure you want to delete this employee?</string>
     <string name="str_select_employee_to_delete">Please select an employee to delete</string>
+    <string name="str_department">Department</string>
+    <string name="str_emp">Employee</string>
+    <string name="str_birthyear">Birth year</string>
+    <string name="str_birthPlace">Birth Place</string>
+    <string-array name="arr_province">
+        <item>Hà Nội</item>
+        <item>Hồ Chí Minh</item>
+        <item>Hải Phòng</item>
+        <item>Đà Nẵng</item>
+        <item>Cần Thơ</item>
+        <item>Huế</item>
+        <item>Hà Giang</item>
+        <item>Cao Bằng</item>
+        <item>Lai Châu</item>
+        <item>Lào Cai</item>
+        <item>Tuyên Quang</item>
+        <item>Thái Nguyên</item>
+        <item>Lạng Sơn</item>
+        <item>Bắc Kạn</item>
+        <item>Thái Bình</item>
+        <item>Nam Định</item>
+        <item>Ninh Bình</item>
+        <item>Hà Nam</item>
+        <item>Hải Dương</item>
+        <item>Quảng Ninh</item>
+        <item>Hưng Yên</item>
+        <item>Bắc Ninh</item>
+        <item>Bắc Giang</item>
+        <item>Phú Thọ</item>
+        <item>Vĩnh Phúc</item>
+        <item>Hoà Bình</item>
+        <item>Thanh Hoá</item>
+        <item>Nghệ An</item>
+        <item>Hà Tĩnh</item>
+        <item>Quảng Bình</item>
+        <item>Quảng Trị</item>
+        <item>Quảng Nam</item>
+        <item>Quảng Ngãi</item>
+        <item>Kon Tum</item>
+        <item>Bình Định</item>
+        <item>Phú Yên</item>
+        <item>Khánh Hoà</item>
+        <item>Ninh Thuận</item>
+        <item>Bình Thuận</item>
+        <item>Gia Lai</item>
+        <item>Đắk Lắk</item>
+        <item>Đắk Nông</item>
+        <item>Lâm Đồng</item>
+        <item>Bình Phước</item>
+        <item>Tây Ninh</item>
+        <item>Bình Dương</item>
+        <item>Đồng Nai</item>
+        <item>Bà Rịa - Vũng Tàu</item>
+        <item>Long An</item>
+        <item>Tiền Giang</item>
+        <item>Đồng Tháp</item>
+        <item>Trà Vinh</item>
+        <item>Vĩnh Long</item>
+        <item>Bến Tre</item>
+        <item>Sóc Trăng</item>
+        <item>Hậu Giang</item>
+        <item>An Giang</item>
+        <item>Kiên Giang</item>
+        <item>Bạc Liêu</item>
+        <item>Cà Mau</item>
+        <item>Điện Biên</item>
+        <item>Sơn La</item>
+    </string-array>
 </resources>

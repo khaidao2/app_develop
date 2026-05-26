@@ -28,38 +28,38 @@ public class EmployeeAdapter extends ArrayAdapter<Employee> {
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        LayoutInflater inflater=context.getLayoutInflater();
-        View custom_view=inflater.inflate(this.resource,null);
+        if (convertView == null) {
+            LayoutInflater inflater=context.getLayoutInflater();
+            convertView=inflater.inflate(this.resource,parent,false);
+        }
         Employee emp = getItem(position);
-        TextView txt_id=custom_view.findViewById(R.id.txt_id);
-        TextView txt_name=custom_view.findViewById(R.id.txt_name);
-        TextView txt_phone=custom_view.findViewById(R.id.txt_phone);
+        TextView txt_id=convertView.findViewById(R.id.txt_id);
+        TextView txt_name=convertView.findViewById(R.id.txt_name);
+        TextView txt_phone=convertView.findViewById(R.id.txt_phone);
 
-        txt_id.setText(emp.getId());
-
-        txt_name.setText(emp.getName());
-
-        txt_phone.setText(emp.getPhone());
-        ImageView img_call=custom_view.findViewById(R.id.img_call);
-        ImageView img_sms=custom_view.findViewById(R.id.img_sms);
+        if (emp != null) {
+            txt_id.setText(emp.getId() != null ? emp.getId() : "");
+            txt_name.setText(emp.getName() != null ? emp.getName() : "");
+            txt_phone.setText(emp.getPhone() != null ? emp.getPhone() : "");
+        } else {
+            txt_id.setText("");
+            txt_name.setText("");
+            txt_phone.setText("");
+        }
+        ImageView img_call=convertView.findViewById(R.id.img_call);
+        ImageView img_sms=convertView.findViewById(R.id.img_sms);
         img_call.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                    Intent intentCall =
-                            new Intent(Intent.ACTION_CALL);
-
-                    Uri uri =
-                            Uri.parse(
-                                    "tel:" + emp.getPhone()
-                            );
-
+                if (emp != null && emp.getPhone() != null) {
+                    Intent intentCall = new Intent(Intent.ACTION_DIAL);
+                    Uri uri = Uri.parse("tel:" + emp.getPhone());
                     intentCall.setData(uri);
-
                     context.startActivity(intentCall);
+                }
             }
         });
 
-        return custom_view;
+        return convertView;
     }
 }

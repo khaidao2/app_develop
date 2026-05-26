@@ -30,4 +30,5 @@
     <string name="str_yes">YES</string>
     <string name="str_no">NO</string>
     <string name="str_id">id</string>
+    <string name="str_department">Department</string>
 </resources>

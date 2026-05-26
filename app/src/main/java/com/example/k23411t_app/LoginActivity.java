@@ -11,11 +11,15 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.example.models.ListUserAccount;
+import com.example.models.UserAccount;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -77,8 +81,67 @@ public class LoginActivity extends AppCompatActivity {
 
         rad_user = findViewById(R.id.rad_user);
     }
-
     public void loginSystem(View view) {
+
+        String username = edt_username.getText().toString().trim();
+        String pwd = edt_pwd.getText().toString().trim();
+
+        // 1. check rỗng
+        if (username.isEmpty() || pwd.isEmpty()) {
+            txt_message.setText(getString(R.string.login_failed));
+            return;
+        }
+
+        // 2. login system
+        UserAccount account = ListUserAccount.login(username, pwd);
+
+        // 3. xử lý kết quả
+        if (account != null) {
+
+            txt_message.setText(getString(R.string.login_success));
+
+            // save SharedPreferences
+            SharedPreferences preferences =
+                    getSharedPreferences(name_share_ref, MODE_PRIVATE);
+
+            SharedPreferences.Editor editor = preferences.edit();
+
+            editor.putString("Username", username);
+            editor.putString("password", pwd);
+            editor.putBoolean("SAVED", chkSaveInfo.isChecked());
+
+            editor.apply();
+
+            Intent intent;
+
+            if (rad_admin.isChecked()) {
+
+                intent = new Intent(
+                        LoginActivity.this,
+                        MainActivity.class
+                );
+
+            } else {
+
+                intent = new Intent(
+                        LoginActivity.this,
+                        EmployeeAdvancedManagementActivity.class
+                );
+            }
+
+            // pass data
+            intent.putExtra("displayName", account.getDisplayName());
+            intent.putExtra("username", account.getUsername());
+
+            startActivity(intent);
+
+        } else {
+
+            txt_message.setText(getString(R.string.login_failed));
+            edt_pwd.setText("");
+        }
+    }
+    public void loginSystemOld(View view) {
 
         String username =
                 edt_username.getText().toString().trim();

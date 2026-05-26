@@ -11,6 +11,7 @@
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -22,6 +23,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.K23411T_App"
         tools:targetApi="31">
+        <activity
+            android:name=".AddEmployeeActivity"
+            android:exported="false" />
         <activity
             android:name=".EmployeeAdvancedManagementActivity"
             android:exported="false" />
