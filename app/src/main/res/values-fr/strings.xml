@@ -34,4 +34,9 @@
     <string name="str_no">NO</string>
     <string name="str_id">id</string>
     <string name="str_department">Department</string>
+    <string name="str_order_status_all">Tout</string>
+    <string name="str_order_status_completed">Terminé</string>
+    <string name="str_order_status_not_payment">Non payé</string>
+    <string name="str_order_status_ongoing_logistics">Logistique en cours</string>
+    <string name="str_order_status_customer_complain">Plainte du client</string>
 </resources>

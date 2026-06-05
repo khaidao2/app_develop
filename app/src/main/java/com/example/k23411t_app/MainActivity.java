@@ -35,12 +35,12 @@ public class MainActivity extends AppCompatActivity {
         String displayName = intent.getStringExtra("displayName");
         if (displayName != null)
         {
-            txt_welcome.setText("Welcome, " + displayName);
+            txt_welcome.setText(getString(R.string.str_welcome_user, displayName));
         }
     }
 
     public void say_hello(View view) {
-        Toast.makeText(this, "Hello K23411T", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, getString(R.string.str_hello_class), Toast.LENGTH_LONG).show();
     }
 
     public void close_app(View view) {
@@ -54,6 +54,16 @@ public class MainActivity extends AppCompatActivity {
 
     public void open_cal(View view) {
         Intent intent = new Intent(MainActivity.this, CalculatorActivity.class);
+        startActivity(intent);
+    }
+
+    public void open_order_management(View view) {
+        Intent intent = new Intent(MainActivity.this, OrderMangementActivity.class);
+        startActivity(intent);
+    }
+
+    public void open_category_management(View view) {
+        Intent intent = new Intent(MainActivity.this, CategoryManagementActivity.class);
         startActivity(intent);
     }
 }

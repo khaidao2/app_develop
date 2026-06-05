@@ -31,4 +31,9 @@
     <string name="str_no">NO</string>
     <string name="str_id">id</string>
     <string name="str_department">Department</string>
+    <string name="str_order_status_all">Tất cả</string>
+    <string name="str_order_status_completed">Đã hoàn thành</string>
+    <string name="str_order_status_not_payment">Chưa thanh toán</string>
+    <string name="str_order_status_ongoing_logistics">Đang vận chuyển</string>
+    <string name="str_order_status_customer_complain">Khách hàng khiếu nại</string>
 </resources>

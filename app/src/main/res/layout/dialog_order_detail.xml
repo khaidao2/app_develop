@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    app:strokeWidth="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Tiêu đề Dialog -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CHI TIẾT ĐƠN HÀNG"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#212529"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E9ECEF"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Bảng thông tin chi tiết -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <!-- Mã hóa đơn -->
+            <TableRow android:paddingVertical="6dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mã đơn hàng:"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#495057"
+                    android:layout_marginEnd="16dp" />
+                <TextView
+                    android:id="@+id/dialog_txt_order_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ORD0001"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/order_blue" />
+            </TableRow>
+
+            <!-- Ngày tạo -->
+            <TableRow android:paddingVertical="6dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ngày tạo:"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#495057" />
+                <TextView
+                    android:id="@+id/dialog_txt_order_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="03/06/2026 07:00"
+                    android:textSize="15sp"
+                    android:textColor="#212529" />
+            </TableRow>
+
+            <!-- Trạng thái -->
+            <TableRow android:paddingVertical="6dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trạng thái:"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#495057" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start">
+                    <TextView
+                        android:id="@+id/dialog_txt_order_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="4dp"
+                        android:text="COMPLETED"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </TableRow>
+
+            <!-- Khách hàng -->
+            <TableRow android:paddingVertical="6dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Khách hàng:"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#495057" />
+                <TextView
+                    android:id="@+id/dialog_txt_customer_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nguyễn Văn A"
+                    android:textSize="15sp"
+                    android:textColor="#212529" />
+            </TableRow>
+
+            <!-- Nhân viên -->
+            <TableRow android:paddingVertical="6dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nhân viên:"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#495057" />
+                <TextView
+                    android:id="@+id/dialog_txt_employee_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trần Thị B"
+                    android:textSize="15sp"
+                    android:textColor="#212529" />
+            </TableRow>
+
+            <!-- Sản phẩm -->
+            <TableRow android:paddingVertical="6dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sản phẩm:"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#495057" />
+                <TextView
+                    android:id="@+id/dialog_txt_products"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Laptop Dell XPS (x1), Greek Yogurt (x3)"
+                    android:textSize="15sp"
+                    android:textColor="#212529"
+                    android:lineSpacingExtra="3dp" />
+            </TableRow>
+
+            <!-- Tổng tiền -->
+            <TableRow android:paddingVertical="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tổng tiền:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#212529" />
+                <TextView
+                    android:id="@+id/dialog_txt_order_sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$1,500.00"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/order_red" />
+            </TableRow>
+
+        </TableLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E9ECEF"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="18dp" />
+
+        <!-- Nút đóng -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/dialog_btn_close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đóng"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="@color/order_blue"
+            app:cornerRadius="8dp"
+            android:paddingVertical="12dp" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

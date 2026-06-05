@@ -83,13 +83,13 @@
     </LinearLayout>
 
     <TableLayout
-        android:stretchColumns="*"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:stretchColumns="*">
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <Button
                 android:id="@+id/btn_percent"
@@ -115,9 +115,10 @@
                 android:layout_height="wrap_content"
                 android:text="Delete" />
         </TableRow>
+
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <Button
                 android:id="@+id/btn_1x"
@@ -139,110 +140,114 @@
 
             <Button
                 android:id="@+id/btn_sep"
-                android:onClick="processInputData"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="processInputData"
                 android:text="/" />
         </TableRow>
+
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <Button
                 android:id="@+id/btn_7"
-                android:onClick="processInputData"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="processInputData"
                 android:text="7" />
 
             <Button
                 android:id="@+id/btn_8"
-                android:onClick="processInputData"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="processInputData"
                 android:text="8" />
 
             <Button
                 android:id="@+id/btn_9"
-                android:onClick="processInputData"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="processInputData"
                 android:text="9" />
 
             <Button
                 android:id="@+id/btn_dup"
-                android:onClick="processInputData"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="processInputData"
                 android:text="x" />
         </TableRow>
+
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <Button
                 android:id="@+id/btn_4"
-                android:onClick="processInputData"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="processInputData"
                 android:text="4" />
 
             <Button
                 android:id="@+id/btn_5"
-                android:onClick="processInputData"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="processInputData"
                 android:text="5" />
 
             <Button
                 android:id="@+id/btn_6"
-                android:onClick="processInputData"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="processInputData"
                 android:text="6" />
 
             <Button
                 android:id="@+id/btn_minus"
-                android:onClick="processInputData"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="processInputData"
                 android:text="-" />
         </TableRow>
+
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <Button
                 android:id="@+id/btn_1"
-                android:onClick="processInputData"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="processInputData"
                 android:text="1" />
 
             <Button
                 android:id="@+id/btn_2"
-                android:onClick="processInputData"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="processInputData"
                 android:text="2" />
 
             <Button
                 android:id="@+id/btn_3"
-                android:onClick="processInputData"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="processInputData"
                 android:text="3" />
 
             <Button
                 android:id="@+id/btn_plus"
-                android:onClick="processInputData"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="processInputData"
                 android:text="+" />
         </TableRow>
+
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <Button
                 android:id="@+id/btn_plusminus"
@@ -253,9 +258,9 @@
 
             <Button
                 android:id="@+id/btn_0"
-                android:onClick="processInputData"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="processInputData"
                 android:text="0" />
 
             <Button

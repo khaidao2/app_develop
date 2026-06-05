@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="K23411T_sales.sqlite" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1500"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="Category" custom_title="0" dock_id="1" table="4,8:mainCategory"/><dock_state state="000000ff00000000fd0000000100000002000001ef00000363fc0100000001fb000000160064006f0063006b00420072006f00770073006500310100000000000001ef0000012b00ffffff000001ef0000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Category" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="73"/><column index="2" value="115"/><column index="3" value="89"/><column index="4" value="71"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1"></sql><sql name="SQL 2">INSERT INTO Product
+(ProductID, ProductName, Coupon, Price, Quantity, VAT, Description, Category)
+VALUES
+('P1', 'Laptop Dell XPS', 'DELL10', 1500.0, 10, '10%', 'High performance laptop for work', 'C1'),
+('P2', 'iPhone 15 Pro', 'APPLE5', 1200.0, 15, '10%', 'Latest iPhone from Apple', 'C1'),
+('P3', 'Sony WH-1000XM5', 'SONY20', 350.0, 30, '10%', 'Top-tier noise cancelling headphones', 'C1'),
+
+('P4', 'T-Shirt Uniqlo', 'UNI10', 25.0, 100, '5%', 'Comfortable cotton t-shirt', 'C2'),
+('P5', 'Levi''s 501 Jeans', 'LEVIS', 80.0, 50, '5%', 'Classic straight fit jeans', 'C2'),
+('P6', 'Nike Windrunner', 'NIKE15', 100.0, 40, '5%', 'Lightweight running jacket', 'C2'),
+
+('P7', 'Organic Apples', 'FRESH', 5.0, 200, '0%', 'Bag of fresh organic apples', 'C3'),
+('P8', 'Whole Grain Bread', 'BAKE', 3.0, 60, '0%', 'Freshly baked whole grain bread', 'C3'),
+('P9', 'Greek Yogurt', 'DAIRY', 4.5, 80, '0%', 'High protein greek yogurt', 'C3');</sql><current_tab id="1"/></tab_sql></sqlb_project>

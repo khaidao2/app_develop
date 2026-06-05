@@ -18,6 +18,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import android.util.Log;
+import java.io.IOException;
+
 import com.example.models.ListUserAccount;
 import com.example.models.UserAccount;
 
@@ -46,6 +49,9 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         addViews();
+
+        // Sao chép database từ assets sang bộ nhớ thiết bị
+        copyDatabase();
 
         name_share_ref = getString(R.string.str_login_info);
 
@@ -282,6 +288,16 @@ public class LoginActivity extends AppCompatActivity {
             edt_username.setText(username);
 
             edt_pwd.setText(password);
+        }
+    }
+
+    private void copyDatabase() {
+        DatabaseHelper dbHelper = new DatabaseHelper(this);
+        try {
+            dbHelper.copyDatabaseFromAssets();
+            Log.d("LoginActivity", "Copy database thành công hoặc đã tồn tại.");
+        } catch (IOException e) {
+            Log.e("LoginActivity", "Lỗi sao chép database từ assets: " + e.getMessage());
         }
     }
 }

@@ -5,4 +5,21 @@
     <color name="yellow">#FFEB3B</color>
     <color name="gray">#C3C3BE</color>
     <color name="blue">#00BCD4</color>
+    <color name="my_light_primary">#6200EE</color>
+    
+    <!-- Status badge colors -->
+    <color name="status_completed_bg">#E8F5E9</color>
+    <color name="status_completed_txt">#2E7D32</color>
+    <color name="status_not_paid_bg">#FFEBEE</color>
+    <color name="status_not_paid_txt">#C62828</color>
+    <color name="status_logistics_bg">#E3F2FD</color>
+    <color name="status_logistics_txt">#1565C0</color>
+    <color name="status_complain_bg">#F3E5F5</color>
+    <color name="status_complain_txt">#6A1B9A</color>
+    
+    <!-- Highlights -->
+    <color name="order_blue">#1E88E5</color>
+    <color name="order_purple">#7B1FA2</color>
+    <color name="order_red">#D32F2F</color>
+    <color name="order_gray">#757575</color>
 </resources>

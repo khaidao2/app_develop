@@ -106,4 +106,29 @@
         <item>Điện Biên</item>
         <item>Sơn La</item>
     </string-array>
+    <string name="str_order_management_title">Order Management</string>
+    <string name="str_from_date">From Date</string>
+    <string name="str_to_date">To Date</string>
+    <string name="str_date_hint">dd/MM/yyyy</string>
+    <string name="str_desc_select_from_date">Select From Date</string>
+    <string name="str_desc_select_to_date">Select To Date</string>
+    <string name="str_desc_filter">Filter</string>
+    <string name="str_desc_clear_filter">Clear Filter</string>
+    <string name="str_order_status_all">All</string>
+    <string name="str_order_status_completed">Completed</string>
+    <string name="str_order_status_not_payment">Not payment</string>
+    <string name="str_order_status_ongoing_logistics">Ongoing logistics</string>
+    <string name="str_order_status_customer_complain">Customer complain</string>
+    <string name="str_category_management_title">Category Management</string>
+    <string name="str_category_id_prefix">ID: </string>
+    <string name="str_category_name_prefix">Name: </string>
+    <string name="str_category_desc_prefix">Description: </string>
+    <string name="str_load_category_failed">Failed to load categories!</string>
+    <string name="str_welcome_user">Welcome, %s</string>
+    <string name="str_hello_class">Hello K23411T</string>
+    <string name="str_product_qty_prefix">Stock: </string>
+    <string name="str_product_coupon_prefix">Off: </string>
+    <string name="str_product_vat_prefix">VAT: </string>
+    <string name="str_product_list_title">Products List</string>
+    <string name="str_load_product_failed">Failed to load products!</string>
 </resources>

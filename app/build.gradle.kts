@@ -32,6 +32,7 @@ android {
 }
 
 dependencies {
+    implementation(libs.activity.ktx)
     implementation("net.objecthunter:exp4j:0.4.8")
     implementation(libs.appcompat)
     implementation(libs.material)

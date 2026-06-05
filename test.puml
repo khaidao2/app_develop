@@ -1,0 +1,190 @@
+@startuml
+class com.example.models.Category {
+- String category
+- String categoryName
+- String description
+- String imageUrl
+- ArrayList<Product> products
++ ArrayList<Product> getProducts()
++ void setProducts(ArrayList<Product>)
++ String getCategory()
++ String getCategoryName()
++ String getDescription()
++ String getImageUrl()
++ void setCategory(String)
++ void setCategoryName(String)
++ void setDescription(String)
++ void setImageUrl(String)
++ String toString()
+}
+
+
+class com.example.models.Department {
+- String departmentID
+- String departmentName
+- ArrayList<Employee> ListofEmployee
++ String getDepartmentID()
++ void setDepartmentID(String)
++ String getDepartmentName()
++ void setDepartmentName(String)
++ String toString()
++ void addEmployee(Employee)
++ void addListEmployee(ArrayList<Employee>)
++ ArrayList<Employee> getListofEmployee()
+}
+
+
+class com.example.models.ListUserAccount {
++ {static} ArrayList<UserAccount> getUserAccount()
++ {static} UserAccount login(String,String)
+}
+
+class com.example.models.Order {
+- String orderID
+- String customerID
+- String employeeID
+- Date orderDate
++ String getOrderID()
++ String getCustomerID()
++ String getEmployeeID()
++ Date getOrderDate()
++ void setOrderID(String)
++ void setCustomerID(String)
++ void setEmployeeID(String)
++ void setOrderDate(Date)
++ String toString()
+}
+
+
+class com.example.models.OrderDetail {
+- String orderDetailId
+- String orderID
+- String productID
+- int quantity
+- double price
+- double coupon
+- double VAT
++ String getOrderDetailId()
++ String getOrderID()
++ String getProductID()
++ int getQuantity()
++ double getPrice()
++ double getCoupon()
++ double getVAT()
++ void setOrderDetailId(String)
++ void setOrderID(String)
++ void setProductID(String)
++ void setQuantity(int)
++ void setPrice(double)
++ void setCoupon(double)
++ void setVAT(double)
++ String toString()
+}
+
+
+class com.example.models.Customer {
+- String cusID
+- String cusName
+- String phone
+- String email
+- Date birthday
+- String address
++ String getCusID()
++ String getCusName()
++ String getPhone()
++ String getEmail()
++ Date getBirthday()
++ String getAddress()
++ void setCusID(String)
++ void setCusName(String)
++ void setPhone(String)
++ void setEmail(String)
++ void setBirthday(Date)
++ void setAddress(String)
++ String toString()
+}
+
+
+class com.example.models.DataWarehouse {
++ {static} ArrayList<Category> getCategories()
++ {static} ArrayList<Employee> getEmployee()
++ {static} ArrayList<Customer> getCustomers()
++ {static} ArrayList<Order> getOrders()
+}
+
+class com.example.models.Employee {
+- ImageView img_save
+- String id
+- String name
+- String phone
+- int birthYear
+- String birthPlace
++ void addViews(View)
++ void addEvents()
+- void saveEmployee()
+- void cancelEmployee()
++ void processSaveEmployee(Intent)
++ String getName()
++ void setName(String)
++ String getId()
++ void setId(String)
++ String getPhone()
++ void setPhone(String)
++ int getBirthYear()
++ void setBirthYear(int)
++ String getBirthPlace()
++ void setBirthPlace(String)
+}
+
+
+class com.example.models.UserAccount {
+- String username
+- String password
+- String displayName
++ String getUsername()
++ void setUsername(String)
++ String getPassword()
++ void setPassword(String)
++ String getDisplayName()
++ void setDisplayName(String)
++ String toString()
+}
+
+
+class com.example.models.Product {
+- String productID
+- String productName
+- String coupon
+- double price
+- double quantity
+- String VAT
+- String description
+- String CateID
++ String getProductID()
++ String getProductName()
++ String getCoupon()
++ double getPrice()
++ double getQuantity()
++ String getVAT()
++ String getDescription()
++ String getCateID()
++ void setProductID(String)
++ void setProductName(String)
++ void setCoupon(String)
++ void setPrice(double)
++ void setQuantity(double)
++ void setVAT(String)
++ void setDescription(String)
++ void setCateID(String)
++ String toString()
+}
+
+
+
+
+java.io.Serializable <|.. com.example.models.Order
+java.io.Serializable <|.. com.example.models.Customer
+java.io.Serializable <|.. com.example.models.Employee
+java.io.Serializable <|.. com.example.models.UserAccount
+java.io.Serializable <|.. com.example.models.Product
+@enduml
