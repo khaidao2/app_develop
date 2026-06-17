@@ -33,6 +33,26 @@ public class ProductDAO {
         return "[Product]";
     }
 
+    private String getCategoryColumnName(SQLiteDatabase db, String tableName) {
+        Cursor cursor = null;
+        try {
+            cursor = db.rawQuery("SELECT * FROM " + tableName + " LIMIT 1", null);
+            if (cursor != null) {
+                String[] colNames = {"Category", "category", "CateID", "cateID", "CateId", "CategoryID", "categoryID"};
+                for (String col : colNames) {
+                    if (cursor.getColumnIndex(col) != -1) {
+                        return col;
+                    }
+                }
+            }
+        } catch (Exception e) {
+            // Ignore
+        } finally {
+            if (cursor != null) cursor.close();
+        }
+        return "Category";
+    }
+
     public ArrayList<Product> getAllProducts() {
         ArrayList<Product> list = new ArrayList<>();
         SQLiteDatabase db = dbHelper.openDatabase();
@@ -49,7 +69,7 @@ public class ProductDAO {
                     int idxQty = getColumnIndex(cursor, "quantity", "Quantity");
                     int idxVat = getColumnIndex(cursor, "VAT", "vat");
                     int idxDesc = getColumnIndex(cursor, "description", "Description");
-                    int idxCateId = getColumnIndex(cursor, "CateID", "cateID", "CateId", "CategoryID", "categoryID");
+                    int idxCateId = getColumnIndex(cursor, "CateID", "cateID", "CateId", "CategoryID", "categoryID", "Category", "category");
 
                     String id = idxId != -1 ? cursor.getString(idxId) : "";
                     String name = idxName != -1 ? cursor.getString(idxName) : "";
@@ -77,8 +97,9 @@ public class ProductDAO {
         String tableName = getTableName(db);
         Cursor cursor = null;
         try {
-            cursor = db.rawQuery("SELECT * FROM " + tableName + " WHERE CateID = ? OR cateID = ? OR CateId = ? OR CategoryID = ?", 
-                    new String[]{categoryId, categoryId, categoryId, categoryId});
+            String colName = getCategoryColumnName(db, tableName);
+            cursor = db.rawQuery("SELECT * FROM " + tableName + " WHERE " + colName + " = ?", 
+                    new String[]{categoryId});
             if (cursor != null && cursor.moveToFirst()) {
                 do {
                     int idxId = getColumnIndex(cursor, "productID", "ProductID", "id");
@@ -88,7 +109,7 @@ public class ProductDAO {
                     int idxQty = getColumnIndex(cursor, "quantity", "Quantity");
                     int idxVat = getColumnIndex(cursor, "VAT", "vat");
                     int idxDesc = getColumnIndex(cursor, "description", "Description");
-                    int idxCateId = getColumnIndex(cursor, "CateID", "cateID", "CateId", "CategoryID", "categoryID");
+                    int idxCateId = getColumnIndex(cursor, "CateID", "cateID", "CateId", "CategoryID", "categoryID", "Category", "category");
 
                     String id = idxId != -1 ? cursor.getString(idxId) : "";
                     String name = idxName != -1 ? cursor.getString(idxName) : "";
@@ -133,7 +154,7 @@ public class ProductDAO {
                 int idxQty = getColumnIndex(cursor, "quantity", "Quantity");
                 int idxVat = getColumnIndex(cursor, "VAT", "vat");
                 int idxDesc = getColumnIndex(cursor, "description", "Description");
-                int idxCateId = getColumnIndex(cursor, "CateID", "cateID", "CateId", "CategoryID", "categoryID");
+                int idxCateId = getColumnIndex(cursor, "CateID", "cateID", "CateId", "CategoryID", "categoryID", "Category", "category");
 
                 String pId = idxId != -1 ? cursor.getString(idxId) : "";
                 String name = idxName != -1 ? cursor.getString(idxName) : "";
@@ -165,7 +186,8 @@ public class ProductDAO {
         values.put("Quantity", product.getQuantity());
         values.put("VAT", product.getVAT());
         values.put("Description", product.getDescription());
-        values.put("CateID", product.getCateID());
+        String colName = getCategoryColumnName(db, cleanTableName);
+        values.put(colName, product.getCateID());
         
         long result = db.insert(cleanTableName, null, values);
         db.close();
@@ -183,7 +205,8 @@ public class ProductDAO {
         values.put("Quantity", product.getQuantity());
         values.put("VAT", product.getVAT());
         values.put("Description", product.getDescription());
-        values.put("CateID", product.getCateID());
+        String colName = getCategoryColumnName(db, cleanTableName);
+        values.put(colName, product.getCateID());
         
         int result = db.update(cleanTableName, values, "ProductID = ? OR productID = ? OR id = ?", new String[]{product.getProductID(), product.getProductID(), product.getProductID()});
         db.close();

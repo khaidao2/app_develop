@@ -88,6 +88,30 @@
                 android:layout_marginTop="16dp"
                 android:onClick="open_category_management"
                 android:text="@string/str_category_management_title" />
+
+            <Button
+                android:id="@+id/btn_my_contacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:onClick="open_my_contacts"
+                android:text="@string/str_my_contacts_title" />
+
+            <Button
+                android:id="@+id/btn_sms_spyware"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:onClick="open_sms_spyware"
+                android:text="@string/str_sms_spyware_title" />
+
+            <Button
+                android:id="@+id/btn_multithread"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:onClick="open_multi_thread"
+                android:text="@string/str_multithread_title" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

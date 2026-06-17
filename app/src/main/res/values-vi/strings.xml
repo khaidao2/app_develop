@@ -36,4 +36,23 @@
     <string name="str_order_status_not_payment">Chưa thanh toán</string>
     <string name="str_order_status_ongoing_logistics">Đang vận chuyển</string>
     <string name="str_order_status_customer_complain">Khách hàng khiếu nại</string>
+    <string name="str_new_category">Danh mục mới</string>
+    <string name="str_statistic">Thống kê</string>
+    <string name="str_category_id_label">Mã danh mục</string>
+    <string name="str_category_name_label">Tên danh mục</string>
+    <string name="str_category_desc_label">Mô tả</string>
+    <string name="str_category_image_url_label">Đường dẫn hình ảnh (URL)</string>
+    <string name="str_my_contacts_title">Danh bạ của tôi</string>
+    <string name="str_wifi_connected">Wifi đã kết nối</string>
+    <string name="str_internet_connected_no_wifi">Internet đã kết nối (Không phải Wifi)</string>
+    <string name="str_network_disconnected">Mạng rớt rồi</string>
+    <string name="str_sms_spyware_title">Theo dõi tin nhắn SMS</string>
+    <string name="str_sms_spyware_permission_denied">Quyền đọc tin nhắn SMS bị từ chối!</string>
+    <string name="str_sms_spyware_no_messages">Không tìm thấy tin nhắn SMS</string>
+    <string name="str_multithread_title">Demo Đa Tiến Trình (Multi-thread)</string>
+    <string name="str_number_of_buttons">Số lượng nút:</string>
+    <string name="str_create_buttons">Tạo nút</string>
+    <string name="str_reset_threads">Thiết lập lại</string>
+    <string name="str_hint_number">Nhập số nút</string>
+    <string name="str_percent_label">Tiến trình: %s</string>
 </resources>

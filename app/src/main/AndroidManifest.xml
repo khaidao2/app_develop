@@ -12,6 +12,7 @@
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -57,8 +58,28 @@
             android:name=".CategoryManagementActivity"
             android:exported="false" />
         <activity
+            android:name=".CategoryNewActivity"
+            android:exported="false" />
+        <activity
             android:name=".ProductListActivity"
             android:exported="false" />
+        <activity
+            android:name=".MyContactActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SmsSpywareActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MultiThreadActivity"
+            android:exported="false" />
+
+        <receiver
+            android:name=".InternetStateReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

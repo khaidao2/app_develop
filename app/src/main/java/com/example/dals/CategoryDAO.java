@@ -142,6 +142,27 @@ public class CategoryDAO {
         return result;
     }
 
+    // Static CRUD wrappers
+    public static ArrayList<Category> getAllCategoriesStatic(Context context) {
+        return new CategoryDAO(context).getAllCategories();
+    }
+
+    public static Category getCategoryByIdStatic(Context context, String id) {
+        return new CategoryDAO(context).getCategoryById(id);
+    }
+
+    public static long insertCategoryStatic(Context context, Category category) {
+        return new CategoryDAO(context).insertCategory(category);
+    }
+
+    public static int updateCategoryStatic(Context context, Category category) {
+        return new CategoryDAO(context).updateCategory(category);
+    }
+
+    public static int deleteCategoryStatic(Context context, String categoryId) {
+        return new CategoryDAO(context).deleteCategory(categoryId);
+    }
+
     private int getColumnIndex(Cursor cursor, String... names) {
         for (String name : names) {
             int idx = cursor.getColumnIndex(name);

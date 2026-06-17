@@ -2,6 +2,8 @@ package com.example.k23411t_app;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -41,6 +43,12 @@ public class CategoryManagementActivity extends AppCompatActivity {
         loadCategories();
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        loadCategories();
+    }
+
     private void initViews() {
         lv_category = findViewById(R.id.lv_category);
         categoryDAO = new CategoryDAO(this);
@@ -77,5 +85,25 @@ public class CategoryManagementActivity extends AppCompatActivity {
 
     public void closeActivity(View view) {
         finish();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.category_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.menu_new_category) {
+            Intent intent = new Intent(CategoryManagementActivity.this, CategoryNewActivity.class);
+            startActivity(intent);
+            return true;
+        } else if (id == R.id.menu_statistic) {
+            Toast.makeText(this, getString(R.string.str_statistic), Toast.LENGTH_SHORT).show();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

@@ -131,4 +131,23 @@
     <string name="str_product_vat_prefix">VAT: </string>
     <string name="str_product_list_title">Products List</string>
     <string name="str_load_product_failed">Failed to load products!</string>
+    <string name="str_new_category">New Category</string>
+    <string name="str_statistic">Statistic</string>
+    <string name="str_category_id_label">Category ID</string>
+    <string name="str_category_name_label">Category Name</string>
+    <string name="str_category_desc_label">Description</string>
+    <string name="str_category_image_url_label">Image URL</string>
+    <string name="str_my_contacts_title">My Contacts</string>
+    <string name="str_wifi_connected">Wifi is connected</string>
+    <string name="str_internet_connected_no_wifi">Internet is connected (Not Wifi)</string>
+    <string name="str_network_disconnected">Network disconnected</string>
+    <string name="str_sms_spyware_title">SMS Spyware</string>
+    <string name="str_sms_spyware_permission_denied">SMS read permission denied!</string>
+    <string name="str_sms_spyware_no_messages">No SMS messages found</string>
+    <string name="str_multithread_title">Multithreading Demo</string>
+    <string name="str_number_of_buttons">Number of buttons:</string>
+    <string name="str_create_buttons">Create</string>
+    <string name="str_reset_threads">Reset</string>
+    <string name="str_hint_number">Enter number</string>
+    <string name="str_percent_label">Progress: %s</string>
 </resources>

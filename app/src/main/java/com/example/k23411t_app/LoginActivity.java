@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -19,6 +20,12 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import android.util.Log;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.IntentFilter;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.widget.Toast;
 import java.io.IOException;
 
 import com.example.models.ListUserAccount;
@@ -35,7 +42,36 @@ public class LoginActivity extends AppCompatActivity {
 
     RadioButton rad_admin, rad_user;
 
+    Button btn_login, btn_exit;
+
     String name_share_ref;
+
+    private BroadcastReceiver internetStateReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+            if (connectivityManager != null) {
+                NetworkInfo activeNetwork = connectivityManager.getActiveNetworkInfo();
+                boolean isConnected = activeNetwork != null && activeNetwork.isConnected();
+                if (isConnected) {
+                    boolean isWiFi = activeNetwork.getType() == ConnectivityManager.TYPE_WIFI;
+                    if (isWiFi) {
+                        Toast.makeText(context, context.getString(R.string.str_wifi_connected), Toast.LENGTH_LONG).show();
+                    } else {
+                        Toast.makeText(context, context.getString(R.string.str_internet_connected_no_wifi), Toast.LENGTH_LONG).show();
+                    }
+                    if (btn_login != null) {
+                        btn_login.setVisibility(View.VISIBLE);
+                    }
+                } else {
+                    Toast.makeText(context, context.getString(R.string.str_network_disconnected), Toast.LENGTH_LONG).show();
+                    if (btn_login != null) {
+                        btn_login.setVisibility(View.GONE);
+                    }
+                }
+            }
+        }
+    };
 
     private static final String DEFAULT_USERNAME = "admin";
     private static final String DEFAULT_PASSWORD = "123";
@@ -86,7 +122,12 @@ public class LoginActivity extends AppCompatActivity {
         rad_admin = findViewById(R.id.rad_admin);
 
         rad_user = findViewById(R.id.rad_user);
+
+        btn_login = findViewById(R.id.btn_login);
+
+        btn_exit = findViewById(R.id.btn_exit);
     }
+
     public void loginSystem(View view) {
 
         String username = edt_username.getText().toString().trim();
@@ -288,6 +329,29 @@ public class LoginActivity extends AppCompatActivity {
             edt_username.setText(username);
 
             edt_pwd.setText(password);
+        }
+        IntentFilter intentFilter = new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION);
+        registerReceiver(internetStateReceiver, intentFilter);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        SharedPreferences preferences = getSharedPreferences(name_share_ref, MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        
+        String username = edt_username.getText().toString().trim();
+        String pwd = edt_pwd.getText().toString().trim();
+        boolean saved = chkSaveInfo.isChecked();
+        
+        editor.putString("Username", username);
+        editor.putString("password", pwd);
+        editor.putBoolean("SAVED", saved);
+        editor.apply();
+        try {
+            unregisterReceiver(internetStateReceiver);
+        } catch (IllegalArgumentException e) {
+            Log.e("LoginActivity", "Receiver not registered", e);
         }
     }
 

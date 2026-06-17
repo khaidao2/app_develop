@@ -66,4 +66,19 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, CategoryManagementActivity.class);
         startActivity(intent);
     }
+
+    public void open_my_contacts(View view) {
+        Intent intent = new Intent(MainActivity.this, MyContactActivity.class);
+        startActivity(intent);
+    }
+
+    public void open_sms_spyware(View view) {
+        Intent intent = new Intent(MainActivity.this, SmsSpywareActivity.class);
+        startActivity(intent);
+    }
+
+    public void open_multi_thread(View view) {
+        Intent intent = new Intent(MainActivity.this, MultiThreadActivity.class);
+        startActivity(intent);
+    }
 }
