@@ -1,0 +1,171 @@
+[
+  {
+    "studyType": "Đại học - Chính quy",
+    "majors": [
+      { "name": "Kinh tế", "ologyId": "7310101", "departmentId": "01", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Kinh tế học", "ologyId": "401", "departmentId": "01", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Kinh tế học chất lượng cao", "ologyId": "401C", "departmentId": "01", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Kinh tế và Quản lý công", "ologyId": "403", "departmentId": "01", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Kinh tế và Quản lý công Chất lượng cao", "ologyId": "403C", "departmentId": "01", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Kinh doanh quốc tế", "ologyId": "408", "departmentId": "02", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Kinh doanh quốc tế", "ologyId": "7340120", "departmentId": "02", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Kinh doanh quốc tế (Tiếng Anh)", "ologyId": "408E", "departmentId": "02", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Kinh doanh quốc tế Chất lượng cao", "ologyId": "408C", "departmentId": "02", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Kinh doanh quốc tế Chất lượng cao bằng tiếng Anh", "ologyId": "408CA", "departmentId": "02", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Kinh tế đối ngoại", "ologyId": "402", "departmentId": "02", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Kinh tế đối ngoại Chất lượng cao", "ologyId": "402C", "departmentId": "02", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Kinh tế đối ngoại Chất lượng cao bằng tiếng Anh", "ologyId": "402CA", "departmentId": "02", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Kinh tế quốc tế", "ologyId": "7310106", "departmentId": "02", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Công nghệ tài chính", "ologyId": "414", "departmentId": "03", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Công nghệ tài chính", "ologyId": "7340205", "departmentId": "03", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Công nghệ tài chính (Chương trình Co-operative Education)", "ologyId": "414H", "departmentId": "03", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Công nghệ tài chính Chất lượng cao", "ologyId": "414C", "departmentId": "03", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Công nghệ tài chính Chất lượng cao", "ologyId": "414C*", "departmentId": "03", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Ngân hàng", "ologyId": "412", "departmentId": "03", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Tài chính - Ngân hàng", "ologyId": "404", "departmentId": "03", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Tài chính - Ngân hàng", "ologyId": "7340201", "departmentId": "03", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Tài chính - Ngân hàng (Tiếng Anh)", "ologyId": "404E", "departmentId": "03", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Tài chính - Ngân hàng Chất lượng cao", "ologyId": "404C", "departmentId": "03", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Tài chính - Ngân hàng Chất lượng cao bằng tiếng Anh", "ologyId": "404CA", "departmentId": "03", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Kế toán", "ologyId": "405", "departmentId": "04", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Kế toán", "ologyId": "7340301", "departmentId": "04", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Kế toán (Tiếng Anh) (Tích hợp chứng chỉ quốc tế ICAEW)", "ologyId": "405E", "departmentId": "04", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Kế toán Chất lượng cao", "ologyId": "405C", "departmentId": "04", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Kế toán Chất lượng cao bằng tiếng Anh", "ologyId": "405CA", "departmentId": "04", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Kiểm toán", "ologyId": "409", "departmentId": "04", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Kiểm toán", "ologyId": "7340302", "departmentId": "04", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Kiểm toán Chất lượng cao", "ologyId": "409C", "departmentId": "04", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Hệ thống thông tin quản lý", "ologyId": "406", "departmentId": "05", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Hệ thống thông tin quản lý", "ologyId": "7340405", "departmentId": "05", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Hệ thống thông tin quản lý (Chương trình Co-operative Education)", "ologyId": "406H", "departmentId": "05", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Hệ thống thông tin quản lý Chất lượng cao", "ologyId": "406C", "departmentId": "05", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Kinh doanh số và Trí tuệ nhân tạo", "ologyId": "416", "departmentId": "05", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Kinh doanh số và Trí tuệ nhân tạo Chất lượng cao", "ologyId": "416C", "departmentId": "05", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Thương mại điện tử", "ologyId": "411", "departmentId": "05", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Thương mại điện tử", "ologyId": "411*", "departmentId": "05", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Thương mại điện tử", "ologyId": "7340122", "departmentId": "05", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Thương mại điện tử (Tiếng Anh)", "ologyId": "411E", "departmentId": "05", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Thương mại điện tử Chất lượng cao", "ologyId": "411C", "departmentId": "05", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Thương mại điện tử Chất lượng cao bằng tiếng Anh", "ologyId": "411CA", "departmentId": "05", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Digital Marketing", "ologyId": "417", "departmentId": "06", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Marketing", "ologyId": "410", "departmentId": "06", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Marketing", "ologyId": "7340115", "departmentId": "06", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Marketing (Tiếng Anh)", "ologyId": "410E", "departmentId": "06", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Marketing Chất lượng cao", "ologyId": "410C", "departmentId": "06", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Marketing Chất lượng cao bằng tiếng Anh", "ologyId": "410CA", "departmentId": "06", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Quản lý công", "ologyId": "418", "departmentId": "06", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Quản lý công", "ologyId": "7340403", "departmentId": "06", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Quản trị du lịch và lữ hành", "ologyId": "415", "departmentId": "06", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Quản trị kinh doanh", "ologyId": "407", "departmentId": "06", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Quản trị kinh doanh", "ologyId": "7340101", "departmentId": "06", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Quản trị kinh doanh (Tiếng Anh)", "ologyId": "407E", "departmentId": "06", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Quản trị kinh doanh Chất lượng cao", "ologyId": "407C", "departmentId": "06", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Quản trị kinh doanh Chất lượng cao bằng tiếng Anh", "ologyId": "407CA", "departmentId": "06", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Luật", "ologyId": "7380101", "departmentId": "07", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Luật Dân sự", "ologyId": "503", "departmentId": "07", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Luật Dân sự Chất lượng cao", "ologyId": "503C", "departmentId": "07", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Luật dân sự Chất lượng cao bằng tiếng Anh", "ologyId": "503CA", "departmentId": "07", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Luật Tài chính - Ngân hàng", "ologyId": "504", "departmentId": "07", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Luật Tài chính - Ngân hàng", "ologyId": "504*", "departmentId": "07", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Luật Tài chính - Ngân hàng chất lượng cao", "ologyId": "504C", "departmentId": "07", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Luật Tài chính - Ngân hàng Chất lượng cao tăng cường tiếng Pháp", "ologyId": "504CP", "departmentId": "07", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Luật và Chính sách công", "ologyId": "505", "departmentId": "07", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Luật kinh doanh", "ologyId": "501", "departmentId": "08", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Luật kinh doanh Chất lượng cao", "ologyId": "501C", "departmentId": "08", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Luật Kinh tế", "ologyId": "7380107", "departmentId": "08", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Luật thương mại quốc tế", "ologyId": "502", "departmentId": "08", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Luật Thương mại quốc tế (Tiếng Anh)", "ologyId": "502E", "departmentId": "08", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Luật thương mại quốc tế Chất lượng cao", "ologyId": "502C", "departmentId": "08", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Luật thương mại quốc tế Chất lượng cao bằng tiếng Anh", "ologyId": "502CA", "departmentId": "08", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Phân tích dữ liệu", "ologyId": "419", "departmentId": "11", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Toán kinh tế", "ologyId": "7310108", "departmentId": "11", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Toán ứng dụng trong kinh tế, quản trị và tài chính", "ologyId": "413", "departmentId": "11", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Toán ứng dụng trong Kinh tế, Quản trị và Tài chính (Tiếng Anh)", "ologyId": "413E", "departmentId": "11", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Toán ứng dụng trong kinh tế, quản trị và tài chính Chất lượng cao", "ologyId": "413C", "departmentId": "11", "graduateLevelId": "DH", "studyTypeId": "CQ" },
+      { "name": "Toán ứng dụng trong kinh tế, quản trị và tài chính chất lượng cao bằng tiếng Anh", "ologyId": "413CA", "departmentId": "11", "graduateLevelId": "DH", "studyTypeId": "CQ" }
+    ]
+  },
+  {
+    "studyType": "Đại học - Đào tạo từ xa",
+    "majors": [
+      { "name": "Kế toán", "ologyId": "7340301", "departmentId": "04", "graduateLevelId": "DH", "studyTypeId": "DTTX" },
+      { "name": "Thương mại điện tử", "ologyId": "7340122", "departmentId": "05", "graduateLevelId": "DH", "studyTypeId": "DTTX" }
+    ]
+  },
+  {
+    "studyType": "Đại học - Liên thông",
+    "majors": [
+      { "name": "Kinh tế đối ngoại", "ologyId": "402", "departmentId": "02", "graduateLevelId": "DH", "studyTypeId": "LT" },
+      { "name": "Tài chính - Ngân hàng", "ologyId": "404", "departmentId": "03", "graduateLevelId": "DH", "studyTypeId": "LT" },
+      { "name": "Kế toán", "ologyId": "405", "departmentId": "04", "graduateLevelId": "DH", "studyTypeId": "LT" },
+      { "name": "Quản trị kinh doanh", "ologyId": "407", "departmentId": "06", "graduateLevelId": "DH", "studyTypeId": "LT" }
+    ]
+  },
+  {
+    "studyType": "Đại học - Liên Trường",
+    "majors": [
+      { "name": "Kinh doanh nông nghiệp số", "ologyId": "432", "departmentId": "01", "graduateLevelId": "DH", "studyTypeId": "LTR" },
+      { "name": "Kinh tế đất đai", "ologyId": "431", "departmentId": "01", "graduateLevelId": "DH", "studyTypeId": "LTR" },
+      { "name": "Kinh doanh thương mại Hàn Quốc", "ologyId": "430", "departmentId": "06", "graduateLevelId": "DH", "studyTypeId": "LTR" }
+    ]
+  },
+  {
+    "studyType": "Đại học - Song ngành chính quy",
+    "majors": [
+      { "name": "Kinh tế đối ngoại", "ologyId": "402", "departmentId": "02", "graduateLevelId": "DH", "studyTypeId": "SN" },
+      { "name": "Quản trị kinh doanh", "ologyId": "407", "departmentId": "06", "graduateLevelId": "DH", "studyTypeId": "SN" },
+      { "name": "Luật kinh doanh", "ologyId": "501", "departmentId": "08", "graduateLevelId": "DH", "studyTypeId": "SN" }
+    ]
+  },
+  {
+    "studyType": "Đại học - Trao đổi sinh viên",
+    "majors": [
+      { "name": "Chương trình trao đổi sinh viên", "ologyId": "TDSV", "departmentId": "14", "graduateLevelId": "DH", "studyTypeId": "TDSV" }
+    ]
+  },
+  {
+    "studyType": "Đại học - Bằng 2 Chính quy",
+    "majors": [
+      { "name": "Kinh tế và Quản lý công", "ologyId": "403", "departmentId": "01", "graduateLevelId": "DH", "studyTypeId": "VB2" },
+      { "name": "Kinh tế đối ngoại", "ologyId": "402", "departmentId": "02", "graduateLevelId": "DH", "studyTypeId": "VB2" },
+      { "name": "Tài chính - Ngân hàng", "ologyId": "404", "departmentId": "03", "graduateLevelId": "DH", "studyTypeId": "VB2" },
+      { "name": "Kế toán", "ologyId": "405", "departmentId": "04", "graduateLevelId": "DH", "studyTypeId": "VB2" },
+      { "name": "Quản trị kinh doanh", "ologyId": "407", "departmentId": "06", "graduateLevelId": "DH", "studyTypeId": "VB2" },
+      { "name": "Luật Dân sự", "ologyId": "503", "departmentId": "07", "graduateLevelId": "DH", "studyTypeId": "VB2" },
+      { "name": "Luật kinh doanh", "ologyId": "501", "departmentId": "08", "graduateLevelId": "DH", "studyTypeId": "VB2" },
+      { "name": "Luật Kinh tế", "ologyId": "7380107", "departmentId": "08", "graduateLevelId": "DH", "studyTypeId": "VB2" }
+    ]
+  },
+  {
+    "studyType": "Đại học - Bằng 2 Vừa làm vừa học",
+    "majors": [
+      { "name": "Kinh tế và Quản lý công", "ologyId": "403", "departmentId": "01", "graduateLevelId": "DH", "studyTypeId": "VB3" },
+      { "name": "Kinh tế đối ngoại", "ologyId": "402", "departmentId": "02", "graduateLevelId": "DH", "studyTypeId": "VB3" },
+      { "name": "Tài chính - Ngân hàng", "ologyId": "404", "departmentId": "03", "graduateLevelId": "DH", "studyTypeId": "VB3" },
+      { "name": "Kế toán", "ologyId": "405", "departmentId": "04", "graduateLevelId": "DH", "studyTypeId": "VB3" },
+      { "name": "Quản trị kinh doanh", "ologyId": "407", "departmentId": "06", "graduateLevelId": "DH", "studyTypeId": "VB3" },
+      { "name": "Luật", "ologyId": "7380101", "departmentId": "07", "graduateLevelId": "DH", "studyTypeId": "VB3" },
+      { "name": "Luật Dân sự", "ologyId": "503", "departmentId": "07", "graduateLevelId": "DH", "studyTypeId": "VB3" },
+      { "name": "Luật Tài chính - Ngân hàng", "ologyId": "504", "departmentId": "07", "graduateLevelId": "DH", "studyTypeId": "VB3" },
+      { "name": "Luật kinh doanh", "ologyId": "501", "departmentId": "08", "graduateLevelId": "DH", "studyTypeId": "VB3" },
+      { "name": "Luật Kinh tế", "ologyId": "7380107", "departmentId": "08", "graduateLevelId": "DH", "studyTypeId": "VB3" },
+      { "name": "Luật thương mại quốc tế", "ologyId": "502", "departmentId": "08", "graduateLevelId": "DH", "studyTypeId": "VB3" }
+    ]
+  },
+  {
+    "studyType": "Đại học - Vừa làm vừa học",
+    "majors": [
+      { "name": "Kinh tế và Quản lý công", "ologyId": "403", "departmentId": "01", "graduateLevelId": "DH", "studyTypeId": "VHVL" },
+      { "name": "Kinh tế đối ngoại", "ologyId": "402", "departmentId": "02", "graduateLevelId": "DH", "studyTypeId": "VHVL" },
+      { "name": "Tài chính - Ngân hàng", "ologyId": "404", "departmentId": "03", "graduateLevelId": "DH", "studyTypeId": "VHVL" },
+      { "name": "Kế toán", "ologyId": "405", "departmentId": "04", "graduateLevelId": "DH", "studyTypeId": "VHVL" },
+      { "name": "Quản trị kinh doanh", "ologyId": "407", "departmentId": "06", "graduateLevelId": "DH", "studyTypeId": "VHVL" },
+      { "name": "Luật", "ologyId": "7380101", "departmentId": "07", "graduateLevelId": "DH", "studyTypeId": "VHVL" },
+      { "name": "Luật Dân sự", "ologyId": "503", "departmentId": "07", "graduateLevelId": "DH", "studyTypeId": "VHVL" },
+      { "name": "Luật Tài chính - Ngân hàng", "ologyId": "504", "departmentId": "07", "graduateLevelId": "DH", "studyTypeId": "VHVL" },
+      { "name": "Luật kinh doanh", "ologyId": "501", "departmentId": "08", "graduateLevelId": "DH", "studyTypeId": "VHVL" },
+      { "name": "Luật Kinh tế", "ologyId": "7380107", "departmentId": "08", "graduateLevelId": "DH", "studyTypeId": "VHVL" },
+      { "name": "Luật thương mại quốc tế", "ologyId": "502", "departmentId": "08", "graduateLevelId": "DH", "studyTypeId": "VHVL" }
+    ]
+  }
+]

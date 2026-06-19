@@ -36,4 +36,13 @@
     <string name="str_order_status_not_payment">Nicht bezahlt</string>
     <string name="str_order_status_ongoing_logistics">Laufende Logistik</string>
     <string name="str_order_status_customer_complain">Kundenbeschwerde</string>
+    <string name="str_number_of_products">Anzahl der Produkte: 100</string>
+    <string name="str_main_thread_object_title">Main Thread (Object)</string>
+    <string name="str_download">Herunterladen</string>
+    <string name="str_download_completed">Download abgeschlossen!</string>
+    <string name="str_percent_format">%d%%</string>
+    <string name="str_deleted_product">Gelöscht: %s</string>
+    <string name="str_num_products_label">Anzahl der Produkte:</string>
+    <string name="str_delete_product_confirm_title">Löschen bestätigen</string>
+    <string name="str_delete_product_confirm_message">Sind Sie sicher, dass Sie %s löschen möchten?</string>
 </resources>

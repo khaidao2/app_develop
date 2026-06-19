@@ -112,6 +112,30 @@
                 android:layout_marginTop="16dp"
                 android:onClick="open_multi_thread"
                 android:text="@string/str_multithread_title" />
+
+            <Button
+                android:id="@+id/btn_main_thread_object"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:onClick="open_main_thread_object"
+                android:text="@string/str_main_thread_object_title" />
+
+            <Button
+                android:id="@+id/btn_font_demo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:onClick="open_font_demo"
+                android:text="@string/str_font_demo_title" />
+
+            <Button
+                android:id="@+id/btn_major_explorer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:onClick="open_major_explorer"
+                android:text="@string/str_major_explorer_title" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

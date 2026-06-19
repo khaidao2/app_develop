@@ -81,4 +81,19 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, MultiThreadActivity.class);
         startActivity(intent);
     }
+
+    public void open_main_thread_object(View view) {
+        Intent intent = new Intent(MainActivity.this, MainThreadObjectActivity.class);
+        startActivity(intent);
+    }
+
+    public void open_font_demo(View view) {
+        Intent intent = new Intent(MainActivity.this, FontActivity.class);
+        startActivity(intent);
+    }
+
+    public void open_major_explorer(View view) {
+        Intent intent = new Intent(MainActivity.this, MajorActivity.class);
+        startActivity(intent);
+    }
 }

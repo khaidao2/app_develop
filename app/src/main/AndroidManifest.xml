@@ -55,6 +55,18 @@
             android:name=".MainActivity"
             android:exported="true" />
         <activity
+            android:name=".FontActivity"
+            android:exported="false"
+            android:label="@string/str_font_demo_title" />
+        <activity
+            android:name=".MajorActivity"
+            android:exported="false"
+            android:label="@string/str_major_explorer_title" />
+        <activity
+            android:name=".SubjectActivity"
+            android:exported="false"
+            android:label="@string/str_subject_list_title" />
+        <activity
             android:name=".CategoryManagementActivity"
             android:exported="false" />
         <activity
@@ -71,6 +83,9 @@
             android:exported="false" />
         <activity
             android:name=".MultiThreadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainThreadObjectActivity"
             android:exported="false" />
 
         <receiver

@@ -55,4 +55,29 @@
     <string name="str_reset_threads">Thiết lập lại</string>
     <string name="str_hint_number">Nhập số nút</string>
     <string name="str_percent_label">Tiến trình: %s</string>
+    <string name="str_number_of_products">Số lượng sản phẩm: 100</string>
+    <string name="str_main_thread_object_title">Main Thread (Object)</string>
+    <string name="str_download">Tải xuống</string>
+    <string name="str_download_completed">Tải xuống hoàn thành!</string>
+    <string name="str_percent_format">%d%%</string>
+    <string name="str_deleted_product">Đã xóa: %s</string>
+    <string name="str_num_products_label">Số lượng sản phẩm:</string>
+    <string name="str_delete_product_confirm_title">Xác nhận xóa</string>
+    <string name="str_delete_product_confirm_message">Bạn có chắc chắn muốn xóa %s không?</string>
+    <string name="str_font_demo_title">Demo Font Chữ</string>
+    <string name="str_play_audio_1">Phát âm thanh 1</string>
+    <string name="str_play_audio_2">Phát âm thanh 2</string>
+    <string name="str_font_preview_sample">Sông sâu tĩnh lặng, lúa chín cúi đầu. (0123456789)</string>
+    <string name="str_major_explorer_title">Tra Cứu Ngành Học</string>
+
+    <!-- Màn hình danh sách môn học -->
+    <string name="str_subject_list_title">Chương trình đào tạo</string>
+    <string name="str_subject_search_hint">Tìm môn học…</string>
+    <string name="str_subject_count_format">%d môn học</string>
+    <string name="str_subject_code_prefix">Mã môn: %s</string>
+    <string name="str_subject_credits_format">%s tín chỉ</string>
+    <string name="str_subject_compulsory">Bắt buộc</string>
+    <string name="str_subject_elective">Tự chọn</string>
+    <string name="str_subject_distance_label">khoảng cách</string>
+    <string name="str_subject_empty">Không có môn học phù hợp</string>
 </resources>
