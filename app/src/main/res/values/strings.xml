@@ -175,4 +175,70 @@
     <string name="str_subject_elective">Elective</string>
     <string name="str_subject_distance_label">distance</string>
     <string name="str_subject_empty">No matching subjects</string>
+
+    <!-- Bài 15: Firebase Realtime Database (CRUD nhiều entity) -->
+    <string name="str_fb_manager_title">Firebase Manager</string>
+    <string name="str_fb_products">Products</string>
+    <string name="str_fb_categories">Categories</string>
+    <string name="str_fb_customers">Customers</string>
+    <string name="str_fb_employees">Employees</string>
+    <string name="str_fb_add_new">+ Add new</string>
+    <string name="str_fb_save">Save</string>
+    <string name="str_fb_delete">Delete</string>
+    <string name="str_fb_need_id">Vui lòng nhập ID</string>
+
+    <string name="str_fb_id">ID</string>
+    <string name="str_fb_product_name">Product name</string>
+    <string name="str_fb_price">Price</string>
+    <string name="str_fb_stock">Stock</string>
+    <string name="str_fb_category_id">Category ID</string>
+    <string name="str_fb_image_url">Image URL</string>
+    <string name="str_fb_active">Active</string>
+    <string name="str_fb_category_name">Category name</string>
+    <string name="str_fb_description">Description</string>
+    <string name="str_fb_full_name">Full name</string>
+    <string name="str_fb_email">Email</string>
+    <string name="str_fb_phone">Phone</string>
+    <string name="str_fb_address">Address</string>
+    <string name="str_fb_department">Department</string>
+    <string name="str_fb_position">Position</string>
+
+    <!-- Admin Dashboard -->
+    <string name="str_dash_title">Admin Dashboard</string>
+    <string name="str_dash_revenue">Tổng doanh số: %1$sđ</string>
+    <string name="str_dash_orders">Số đơn hàng: %1$d</string>
+    <string name="str_dash_top_customers">Top khách hàng</string>
+    <string name="str_dash_top_products">Top sản phẩm bán chạy</string>
+    <string name="str_dash_card_revenue">Doanh số</string>
+    <string name="str_dash_card_orders">Đơn hàng</string>
+    <string name="str_dash_card_customers">Khách hàng</string>
+    <string name="str_dash_card_products">Sản phẩm</string>
+    <string name="str_dash_revenue_by_status">Doanh số theo trạng thái</string>
+    <string name="str_dash_customers_section">Danh sách khách hàng</string>
+    <string name="str_dash_products_section">Danh sách sản phẩm</string>
+    <string name="str_dash_search_customer_hint">Tìm theo tên, SĐT, email…</string>
+    <string name="str_dash_search_product_hint">Tìm theo tên sản phẩm…</string>
+    <string name="str_dash_filter_category">Lọc:</string>
+    <string name="str_dash_no_result">Không có kết quả phù hợp</string>
+    <string name="str_dash_updated">Cập nhật lúc %1$s</string>
+    <string name="str_dash_all">Tất cả</string>
+    <string name="str_dash_active">Đang bán</string>
+    <string name="str_dash_inactive">Đã ẩn</string>
+
+    <!-- Client Shop -->
+    <string name="str_shop_title">Shop</string>
+    <string name="str_shop_search_hint">Tìm sản phẩm…</string>
+    <string name="str_shop_categories">Categories</string>
+    <string name="str_shop_cart">Cart</string>
+    <string name="str_shop_added">Đã thêm: %1$s</string>
+    <string name="str_shop_filter_by">Đang lọc theo danh mục: %1$s</string>
+
+    <!-- Cart / Checkout -->
+    <string name="str_cart_total">Tổng cộng: %1$sđ</string>
+    <string name="str_cart_customer">Khách hàng</string>
+    <string name="str_cart_employee">Mã nhân viên (employeeId)</string>
+    <string name="str_cart_checkout">Đặt hàng (Checkout)</string>
+    <string name="str_cart_empty">Giỏ hàng trống</string>
+    <string name="str_cart_need_customer">Vui lòng chọn khách hàng</string>
+    <string name="str_cart_checkout_ok">Đặt hàng thành công: %1$s</string>
 </resources>
