@@ -96,4 +96,19 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, MajorActivity.class);
         startActivity(intent);
     }
+
+    public void open_firebase_contacts(View view) {
+        Intent intent = new Intent(MainActivity.this, FbHubActivity.class);
+        startActivity(intent);
+    }
+
+    public void open_admin_dashboard(View view) {
+        Intent intent = new Intent(MainActivity.this, AdminDashboardActivity.class);
+        startActivity(intent);
+    }
+
+    public void open_shop(View view) {
+        Intent intent = new Intent(MainActivity.this, ShopActivity.class);
+        startActivity(intent);
+    }
 }

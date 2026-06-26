@@ -13,3 +13,8 @@ Thumbs.db
 *.keystore
 *.apk
 *.aab
+
+# Firebase config (chứa key project — không commit)
+google-services.json
+app/google-services.json
+Slide/Slides_ENG.rar

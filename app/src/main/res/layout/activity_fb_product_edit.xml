@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/edtId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/str_fb_id" />
+
+        <EditText
+            android:id="@+id/edtProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/str_fb_product_name" />
+
+        <EditText
+            android:id="@+id/edtPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/str_fb_price"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/edtStock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/str_fb_stock"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edtCategoryId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/str_fb_category_id" />
+
+        <EditText
+            android:id="@+id/edtImageUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/str_fb_image_url"
+            android:inputType="textUri" />
+
+        <CheckBox
+            android:id="@+id/cbActive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/str_fb_active" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="onSave"
+            android:text="@string/str_fb_save" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:onClick="onDelete"
+            android:text="@string/str_fb_delete" />
+    </LinearLayout>
+</ScrollView>
